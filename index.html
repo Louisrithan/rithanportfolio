@@ -21,7 +21,7 @@
         }
 
         body {
-            background: linear-gradient(145deg, #000000, #0d0d0d); /* Dark mirror-like gradient */
+            background: linear-gradient(145deg, #000000, #000000); /* Dark mirror-like gradient */
             color: #ffffff;
             -webkit-tap-highlight-color: transparent;
         }
@@ -99,7 +99,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(25, 25, 25, 0.7));
+            background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.719));
             text-align: center;
         }
 
@@ -140,7 +140,7 @@
 
         /* About Section */
         .about-section {
-            background: linear-gradient(145deg, rgba(25, 25, 25, 0.9), rgba(35, 35, 35, 0.7));
+            background: linear-gradient(145deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.7));
         }
 
         .about-section h2 {
@@ -160,7 +160,7 @@
 
         /* Education Section */
         .education-section {
-            background: rgba(35, 35, 35, 0.8);
+            background: rgba(0, 0, 0, 0.8);
         }
 
         .education-section h2 {
@@ -190,11 +190,14 @@
         .projects-container {
             display: flex;
             flex-wrap: wrap;
+            color: #000000
             justify-content: center;
         }
 
         .project-card {
-            background: rgba(30, 30, 30, 0.8);
+            background: rgba(26, 26, 26, 0.486);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             padding: 20px;
             margin: 20px;
             width: 300px;
@@ -205,7 +208,7 @@
 
         .project-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+            box-shadow: 0 0 20px rgba(187, 48, 152, 0.671);
         }
 
         .project-card img {
@@ -242,6 +245,7 @@
             background: rgba(0, 255, 255, 0.6);
             transform: translateY(-3px);
         }
+        
 
         .drive-link{
             display: flex;
@@ -257,7 +261,7 @@
         }
 
         .drive-link a:hover {
-            color: #ff3dcee8;
+            color: #38d1ffe8;
         }
 
         /* Collapsible Description */
@@ -276,7 +280,7 @@
 
         /* Contact Section */
         .contact-section {
-            background: linear-gradient(145deg, rgba(0, 0, 0, 0.9), rgba(25, 25, 25, 0.7));
+            background: linear-gradient(145deg, rgba(0, 0, 0, 0.9), rgb(0, 0, 0));
             color: #ffffff;
             padding: 100px 50px;
             text-align: center;
@@ -310,10 +314,19 @@
         footer {
             text-align: center;
             padding: 20px;
-            background: rgba(18, 18, 18, 0.7);
+            background: rgba(0, 0, 0, 0);
             color: #ccc;
             font-size: 14px;
         }
+
+        .custom-line {
+            border: none;
+            height: 2px; /* Thickness */
+            background-color: #00ffff; /* Line color */
+            width: 80%; /* Line width relative to its container */
+            margin: 50px auto; /* Vertical margin and center alignment */
+        }
+
     </style>
 
     <script>
@@ -346,22 +359,28 @@
 
     <!-- About Section -->
     <div id="about" class="about-section section">
+        <hr class="custom-line">
         <h2>About Me</h2>
         <p>
             I’m Rithan, a passionate graphic designer, front-end developer, and photographer. I enjoy creating visually stunning designs, 
             crafting user-friendly websites, and capturing the beauty of the world through my camera lens. My goal is to deliver
             creativity and functionality in every project I undertake.
         </p>
+        <hr class="custom-line">
+
     </div>
 
     <!-- Education Section -->
     <div id="education" class="education-section section">
+        <hr class="custom-line">
         <h2>Education</h2>
         <ul>
             <li>Bachelor's Degree in Artificial intelligence and data sceince - J.J.college of engineering (Anna university) (2022-2026)</li>
             <li>self-taught Graphic Designing skills</li>
             <li>Self-taught Front-End Development Skills</li>
         </ul>
+        <hr class="custom-line">
+
     </div>
 
     <!-- Projects Section -->
@@ -378,6 +397,7 @@
                     <p>This project develops a real-time eye movement detection model using Python, leveraging computer vision techniques with libraries like OpenCV and Dlib. By training a neural network to analyze eye movements, the system provides insights into gaze patterns, which can be applied in fields such as user experience research and driver safety. The application captures video input, processes frames, and displays results on an intuitive interface, showcasing the potential of technology in enhancing human-computer interaction.</p>
                 </div>
             </div>
+            
 
             <!-- Project 2 -->
             <div class="project-card">
@@ -388,19 +408,23 @@
                     <h4>Project Details:</h4>
                     <p>A personal photography portfolio that highlights some of my best works across landscapes, portraits, and urban photography. This project uses Adobe Lightroom for editing and portfolio presentation.</p>
                     <div class="drive_link">
-                    <a href="https://drive.google.com/drive/folders/1F5YUYdQiRmP6uvu1sZswViTFXhBvgXdo?usp=sharing">View my Photographs</a>
+                    <a href="https://drive.google.com/drive/folders/1F5YUYdQiRmP6uvu1sZswViTFXhBvgXdo?usp=drive_link" target="_blank">View my Photographs</a>
                     </div>
+ 
                 </div>
             </div>
         </div>
     </div>
+    <hr class="custom-line">
+
+
 
     <!-- Contact Section -->
     <div id="contact" class="contact-section">
         <h2>Contact Me</h2>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/rithan-kc" target="_blank">LinkedIn</a>
-            <a href="mailto:kcrithan@example.com">Gmail</a>
+            <a href="mailto:kcrithan@gmail.com">Gmail</a>
             <a href="https://www.instagram.com/thatlunaticnerd" target="_blank">Instagram</a>
             <a href="https://github.com/Louisrithan" target="_blank">GitHub</a>
         </div>
